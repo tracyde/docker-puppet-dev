@@ -24,7 +24,7 @@ RUN \
 RUN \
   rpm -ivh http://yum.puppetlabs.com/puppetlabs-release-el-6.noarch.rpm && \
   yum -y upgrade && \
-  yum -y install puppet rubygem-puppet-lint && \
+  yum -y install puppet rubygem-puppet-lint rubygem-rake && \
   gem install rspec-puppet && \
   git clone https://github.com/rodjek/vim-puppet.git /root/.vim/bundle/vim-puppet
 
