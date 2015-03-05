@@ -1,7 +1,7 @@
 FROM centos:6.6
 
 # Install dev tools
-RUN yum -y upgrade && yum -y install vim git
+RUN yum -y upgrade && yum -y install vim git tar
 
 # Setup vim (pathogen and a few other modules
 RUN \
